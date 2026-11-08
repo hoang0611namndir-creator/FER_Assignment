@@ -1,0 +1,304 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "fullName": "Quản trị viên"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "123456",
+      "fullName": "Khách hàng"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Văn học"
+    },
+    {
+      "id": 2,
+      "name": "Kinh tế"
+    },
+    {
+      "id": 3,
+      "name": "Kỹ năng sống"
+    },
+    {
+      "id": 4,
+      "name": "Thiếu nhi"
+    },
+    {
+      "id": 5,
+      "name": "Khoa học"
+    },
+    {
+      "id": 6,
+      "name": "Lịch sử"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "categoryId": 1,
+      "price": 79000,
+      "rating": 4.8,
+      "sold": 1250,
+      "image": "https://picsum.photos/seed/book1/400/560",
+      "description": "Hành trình của chàng chăn cừu Santiago đi tìm kho báu và khám phá ý nghĩa của việc theo đuổi ước mơ."
+    },
+    {
+      "id": 2,
+      "title": "Đắc Nhân Tâm",
+      "author": "Dale Carnegie",
+      "categoryId": 3,
+      "price": 86000,
+      "rating": 4.7,
+      "sold": 2100,
+      "image": "https://picsum.photos/seed/book2/400/560",
+      "description": "Cuốn sách kinh điển về nghệ thuật giao tiếp, thu phục lòng người và xây dựng các mối quan hệ."
+    },
+    {
+      "id": 3,
+      "title": "Cha Giàu Cha Nghèo",
+      "author": "Robert Kiyosaki",
+      "categoryId": 2,
+      "price": 95000,
+      "rating": 4.5,
+      "sold": 1680,
+      "image": "https://picsum.photos/seed/book3/400/560",
+      "description": "Bài học về tư duy tài chính, cách tiền làm việc cho bạn và sự khác biệt giữa tài sản và tiêu sản."
+    },
+    {
+      "id": 4,
+      "title": "Dế Mèn Phiêu Lưu Ký",
+      "author": "Tô Hoài",
+      "categoryId": 4,
+      "price": 45000,
+      "rating": 4.9,
+      "sold": 980,
+      "image": "https://picsum.photos/seed/book4/400/560",
+      "description": "Cuộc phiêu lưu của chú Dế Mèn qua nhiều vùng đất, học được bài học về tình bạn và lòng dũng cảm."
+    },
+    {
+      "id": 5,
+      "title": "Lược Sử Thời Gian",
+      "author": "Stephen Hawking",
+      "categoryId": 5,
+      "price": 115000,
+      "rating": 4.6,
+      "sold": 640,
+      "image": "https://picsum.photos/seed/book5/400/560",
+      "description": "Giới thiệu dễ hiểu về vũ trụ, Big Bang, hố đen và bản chất của thời gian."
+    },
+    {
+      "id": 6,
+      "title": "Sapiens: Lược Sử Loài Người",
+      "author": "Yuval Noah Harari",
+      "categoryId": 6,
+      "price": 189000,
+      "rating": 4.8,
+      "sold": 1430,
+      "image": "https://picsum.photos/seed/book6/400/560",
+      "description": "Câu chuyện về sự tiến hóa của loài người từ thời đồ đá đến kỷ nguyên công nghệ."
+    },
+    {
+      "id": 7,
+      "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
+      "author": "Rosie Nguyễn",
+      "categoryId": 3,
+      "price": 80000,
+      "rating": 4.3,
+      "sold": 870,
+      "image": "https://picsum.photos/seed/book7/400/560",
+      "description": "Những trải nghiệm và lời khuyên dành cho người trẻ về học tập, làm việc và đi để trưởng thành."
+    },
+    {
+      "id": 8,
+      "title": "Mắt Biếc",
+      "author": "Nguyễn Nhật Ánh",
+      "categoryId": 1,
+      "price": 110000,
+      "rating": 4.7,
+      "sold": 1120,
+      "image": "https://picsum.photos/seed/book8/400/560",
+      "description": "Câu chuyện tình đơn phương trong trẻo và day dứt của Ngạn dành cho Hà Lan."
+    },
+    {
+      "id": 9,
+      "title": "Tư Duy Nhanh Và Chậm",
+      "author": "Daniel Kahneman",
+      "categoryId": 2,
+      "price": 199000,
+      "rating": 4.4,
+      "sold": 520,
+      "image": "https://picsum.photos/seed/book9/400/560",
+      "description": "Khám phá hai hệ thống tư duy chi phối cách chúng ta ra quyết định hằng ngày."
+    },
+    {
+      "id": 10,
+      "title": "Hoàng Tử Bé",
+      "author": "Antoine de Saint-Exupéry",
+      "categoryId": 4,
+      "price": 60000,
+      "rating": 4.9,
+      "sold": 1340,
+      "image": "https://picsum.photos/seed/book10/400/560",
+      "description": "Câu chuyện triết lý nhẹ nhàng về tình yêu, tình bạn qua đôi mắt của một cậu bé đến từ tiểu tinh cầu."
+    },
+    {
+      "id": 11,
+      "title": "Vũ Trụ",
+      "author": "Carl Sagan",
+      "categoryId": 5,
+      "price": 168000,
+      "rating": 4.6,
+      "sold": 410,
+      "image": "https://picsum.photos/seed/book11/400/560",
+      "description": "Hành trình khám phá vũ trụ, từ các vì sao, hành tinh đến nguồn gốc sự sống."
+    },
+    {
+      "id": 12,
+      "title": "Việt Nam Sử Lược",
+      "author": "Trần Trọng Kim",
+      "categoryId": 6,
+      "price": 135000,
+      "rating": 4.5,
+      "sold": 590,
+      "image": "https://picsum.photos/seed/book12/400/560",
+      "description": "Bộ sử viết bằng chữ quốc ngữ, tóm lược lịch sử Việt Nam qua các triều đại."
+    },
+    {
+      "id": 13,
+      "title": "Số Đỏ",
+      "author": "Vũ Trọng Phụng",
+      "categoryId": 1,
+      "price": 65000,
+      "rating": 4.4,
+      "sold": 460,
+      "image": "https://picsum.photos/seed/book13/400/560",
+      "description": "Tiểu thuyết trào phúng về xã hội thành thị Việt Nam đầu thế kỷ XX qua nhân vật Xuân Tóc Đỏ."
+    },
+    {
+      "id": 14,
+      "title": "Nghĩ Giàu Làm Giàu",
+      "author": "Napoleon Hill",
+      "categoryId": 2,
+      "price": 99000,
+      "rating": 4.3,
+      "sold": 760,
+      "image": "https://picsum.photos/seed/book14/400/560",
+      "description": "Những nguyên tắc thành công được đúc kết từ cuộc đời của nhiều người giàu có."
+    },
+    {
+      "id": 15,
+      "title": "Thói Quen Nguyên Tử",
+      "author": "James Clear",
+      "categoryId": 3,
+      "price": 149000,
+      "rating": 4.8,
+      "sold": 1510,
+      "image": "https://picsum.photos/seed/book15/400/560",
+      "description": "Phương pháp xây dựng thói quen tốt và loại bỏ thói quen xấu bằng những thay đổi nhỏ mỗi ngày."
+    },
+    {
+      "id": 16,
+      "title": "Doraemon Tập 1",
+      "author": "Fujiko F. Fujio",
+      "categoryId": 4,
+      "price": 25000,
+      "rating": 4.9,
+      "sold": 1890,
+      "image": "https://picsum.photos/seed/book16/400/560",
+      "description": "Chú mèo máy đến từ tương lai cùng những bảo bối thần kỳ giúp đỡ cậu bé Nobita."
+    },
+    {
+      "id": 17,
+      "title": "Gen: Lịch Sử Và Tương Lai",
+      "author": "Siddhartha Mukherjee",
+      "categoryId": 5,
+      "price": 225000,
+      "rating": 4.7,
+      "sold": 330,
+      "image": "https://picsum.photos/seed/book17/400/560",
+      "description": "Lịch sử nghiên cứu về gen và những câu hỏi đạo đức của công nghệ di truyền."
+    },
+    {
+      "id": 18,
+      "title": "Súng, Vi Trùng Và Thép",
+      "author": "Jared Diamond",
+      "categoryId": 6,
+      "price": 179000,
+      "rating": 4.5,
+      "sold": 370,
+      "image": "https://picsum.photos/seed/book18/400/560",
+      "description": "Lý giải vì sao các nền văn minh phát triển không đồng đều trên thế giới."
+    },
+    {
+      "id": 19,
+      "title": "Cho Tôi Xin Một Vé Đi Tuổi Thơ",
+      "author": "Nguyễn Nhật Ánh",
+      "categoryId": 1,
+      "price": 72000,
+      "rating": 4.6,
+      "sold": 940,
+      "image": "https://picsum.photos/seed/book19/400/560",
+      "description": "Những ký ức tuổi thơ hồn nhiên, tinh nghịch được kể lại bằng giọng văn hóm hỉnh."
+    },
+    {
+      "id": 20,
+      "title": "Khởi Nghiệp Tinh Gọn",
+      "author": "Eric Ries",
+      "categoryId": 2,
+      "price": 129000,
+      "rating": 4.2,
+      "sold": 280,
+      "image": "https://picsum.photos/seed/book20/400/560",
+      "description": "Phương pháp xây dựng doanh nghiệp bằng cách thử nghiệm nhanh, học hỏi và cải tiến liên tục."
+    },
+    {
+      "id": 21,
+      "title": "Sống Tối Giản",
+      "author": "Fumio Sasaki",
+      "categoryId": 3,
+      "price": 89000,
+      "rating": 4.1,
+      "sold": 350,
+      "image": "https://picsum.photos/seed/book21/400/560",
+      "description": "Lợi ích của việc buông bỏ đồ vật thừa thãi để sống nhẹ nhàng và hạnh phúc hơn."
+    },
+    {
+      "id": 22,
+      "title": "Truyện Cổ Grimm",
+      "author": "Anh em Grimm",
+      "categoryId": 4,
+      "price": 120000,
+      "rating": 4.7,
+      "sold": 620,
+      "image": "https://picsum.photos/seed/book22/400/560",
+      "description": "Tuyển tập những câu chuyện cổ tích nổi tiếng thế giới dành cho mọi lứa tuổi."
+    }
+  ],
+  "cart": [
+    {
+      "userId": 2,
+      "bookId": 8,
+      "quantity": 1,
+      "id": 1
+    }
+  ],
+  "orders": [],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 0,
+      "message": "Chào mừng bạn đến với BookStore! Giảm 10% cho đơn hàng đầu tiên.",
+      "createdAt": "2026-11-01T08:00:00.000Z",
+      "read": false
+    }
+  ]
+}
