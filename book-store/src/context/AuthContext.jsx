@@ -1,5 +1,6 @@
-x import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { api } from "../api";
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import notificationService from "../services/notificationService";
+import userService from "../services/userService";
 import { getUser, removeUser, saveUser } from "../utils/localStorage";
 
 const AuthContext = createContext(null);
@@ -9,7 +10,7 @@ export function AuthProvider({ children }) {
   const [notifications, setNotifications] = useState([]);
 
   const login = async (username, password) => {
-    const found = await api.login(username, password);
+    const found = await userService.login(username, password);
     if (!found) return false;
     const { password: _pw, ...safeUser } = found;
     setUser(safeUser);
@@ -26,7 +27,7 @@ export function AuthProvider({ children }) {
   const refreshNotifications = useCallback(async () => {
     if (!user) return;
     try {
-      setNotifications(await api.getNotifications(user.id));
+      setNotifications(await notificationService.getByUser(user.id));
     } catch {
       /* server chưa chạy: bỏ qua */
     }
@@ -35,7 +36,7 @@ export function AuthProvider({ children }) {
   // Thêm thông báo mới vào database và cập nhật chuông
   const notify = async (message) => {
     if (!user) return;
-    await api.addNotification({
+    await notificationService.add({
       userId: user.id,
       message,
       createdAt: new Date().toISOString(),
@@ -46,7 +47,7 @@ export function AuthProvider({ children }) {
 
   const markAllRead = async () => {
     const unread = notifications.filter((n) => !n.read);
-    await Promise.all(unread.map((n) => api.markNotificationRead(n.id)));
+    await Promise.all(unread.map((n) => notificationService.markRead(n.id)));
     refreshNotifications();
   };
 
